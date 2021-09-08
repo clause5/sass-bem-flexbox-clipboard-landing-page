@@ -1,7 +1,8 @@
 @import 'resets';
+@import 'variables';
 
-$font-weights: (
-    "regular": 400,
-    "medium": 500,
-    "bold":700
-);
+@media all and (min-width: 320px) and (max-width: 800px){
+}
+
+@media all and (min-width: 801px){
+}
