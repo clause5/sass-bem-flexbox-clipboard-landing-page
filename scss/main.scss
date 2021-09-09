@@ -1,8 +1,135 @@
 @import 'resets';
 @import 'variables';
 
-@media all and (min-width: 320px) and (max-width: 800px){
+body{
+    width: 100vw;
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: $grayisg-blue ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
-@media all and (min-width: 801px){
+.header__title , .section__title, .tool__title , .column__title{
+    color: $dark-grayish-blue;
+}
+.btn{
+    width: 280px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    color: $white;
+    font-weight: 600;
+    font-size: 1rem;
+    &:hover{
+        opacity: 0.6;
+    }
+}
+.header__btn--ios , .section__btn--ios{
+    background-color: $strong_cyan;
+    box-shadow: inset 0 -4px $strong_cyan_inset;
+}
+
+.header__btn--mac , .section__btn--mac {
+    background-color: $ligh-blue;
+    box-shadow: inset 0 -4px $ligh-blue-inset;
+}
+
+footer{
+    background-color: $gray-footer;
+    display: flex;
+}
+.sitemap__list{
+    list-style: none;
+}
+.sitemap__item{
+    line-height: 2.5rem;
+    color: $dark-grayish-blue;
+}
+
+.sitemap__item , .socialmedia__icon{
+    &:hover{
+      filter: invert(59%) sepia(54%) saturate(529%) hue-rotate(121deg) brightness(93%) contrast(94%);
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px){
+    .btn{
+        display: block;
+        margin: 1rem auto;
+    }
+    header{
+        width: 100%;
+        padding: 4rem 2rem;
+        background-image: url('../../images/bg-header-mobile.png');
+        background-position: center;
+        background-size: cover;
+        & .header__title{
+            font-size: 2rem;
+        }
+        & .header__logo{
+            margin: 4rem auto 2rem auto;
+        }
+        & .header__paragraph{
+            display: block;
+            margin: 2rem 0;
+        }
+    }
+    main{
+        padding: 4rem 2rem;
+        & .main__section{
+            padding: 3rem 0;
+        }
+        & .section__paragraph, .tool_description{
+            display: block;
+            padding: 2rem .5rem;
+        }
+        & .column__one , .section__image {
+            width: 90%;
+            margin: 1rem 0;
+        }
+
+        & .column__two{
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        & .tool__icon{
+            margin-bottom: 2rem;
+        }
+        & .tools__container{
+            height: 700px;
+            margin: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        & .sponsors__container{
+            height: 650px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        & .sponsors_logo{
+            width: 40%;
+        }
+    }
+    footer{
+        height: 450px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        & .footer__logo{
+            width: 50px;
+        }
+        & .socialmedia__container{
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }
