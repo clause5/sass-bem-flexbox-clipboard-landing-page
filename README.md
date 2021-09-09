@@ -23,9 +23,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop ScreenShot]('./images/1440px.png')
+![Desktop ScreenShot](./images/1440px.png)
 
-![iPhoneX ScreenShot]('./images/iPhoneX.jpg')
+![iPhoneX ScreenShot](./images/iPhoneX.jpg)
 
 
 ### Links
