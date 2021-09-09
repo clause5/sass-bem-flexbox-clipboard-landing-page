@@ -23,14 +23,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop ScreenShot]('./images/1440px.png')
 
+![iPhoneX ScreenShot]('./images/iPhoneX.jpg')
 
 
 ### Links
 
 - Solution URL: [Github Repository](https://github.com/clause5/sass-bem-flexbox-clipboard-landing-page)
-- Live Site URL: [Github Page](https://your-live-site-url.com)
+- Live Site URL: [Github Page](https://clause5.github.io/sass-bem-flexbox-clipboard-landing-page/)
 
 ## My process
 

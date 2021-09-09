@@ -7,7 +7,7 @@
 body {
   width: 100vw;
   font-size: 18px;
-  font-family: 'Bai Jamjuree', sans-serif;
+  font-family: "Bai Jamjuree", sans-serif;
   color: #9fabb2;
   display: flex;
   flex-direction: column;
@@ -28,7 +28,6 @@ body {
   font-weight: 600;
   font-size: 1rem;
 }
-
 .btn:hover {
   opacity: 0.6;
 }
@@ -44,8 +43,13 @@ body {
 }
 
 footer {
+  width: 100%;
   background-color: whitesmoke;
   display: flex;
+}
+
+.footer__logo {
+  width: 50px;
 }
 
 .sitemap__list {
@@ -57,6 +61,11 @@ footer {
   color: #4c545d;
 }
 
+.socialmedia__container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .sitemap__item:hover, .socialmedia__icon:hover {
   filter: invert(59%) sepia(54%) saturate(529%) hue-rotate(121deg) brightness(93%) contrast(94%);
 }
@@ -66,6 +75,7 @@ footer {
     display: block;
     margin: 1rem auto;
   }
+
   header {
     width: 100%;
     padding: 4rem 2rem;
@@ -83,6 +93,7 @@ footer {
     display: block;
     margin: 2rem 0;
   }
+
   main {
     padding: 4rem 2rem;
   }
@@ -91,7 +102,7 @@ footer {
   }
   main .section__paragraph, main .tool_description {
     display: block;
-    padding: 2rem .5rem;
+    padding: 2rem 0.5rem;
   }
   main .column__one, main .section__image {
     width: 90%;
@@ -123,18 +134,112 @@ footer {
   main .sponsors_logo {
     width: 40%;
   }
+
   footer {
     height: 450px;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
   }
-  footer .footer__logo {
-    width: 50px;
-  }
   footer .socialmedia__container {
     width: 40%;
-    display: flex;
-    justify-content: space-between;
   }
 }
+@media screen and (min-width: 801px) {
+  .btn {
+    width: 180px;
+    margin: 0 1rem;
+  }
+
+  header {
+    width: 100%;
+    height: 750px;
+    background-image: url("../../images/bg-header-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10rem 0 6rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  header .header__logo {
+    width: 100px;
+    margin: 0 auto;
+  }
+  header .header__paragraph {
+    width: 45%;
+    margin: 0 auto;
+  }
+
+  main {
+    margin: 4rem auto;
+  }
+  main h2 {
+    font-size: 2.5rem;
+  }
+  main .section__paragraph {
+    display: block;
+    width: 45%;
+    margin: 2rem auto;
+  }
+  main .section__columns {
+    display: flex;
+    margin: 6rem 0 10rem 0;
+  }
+  main .column__two {
+    width: 38%;
+    text-align: left;
+    padding-left: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  main .column_paragraph {
+    margin-top: 1rem;
+  }
+  main .main__section {
+    margin-bottom: 5rem;
+  }
+  main .tools__container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem 0;
+  }
+  main .tool__icon {
+    width: 60px;
+    margin: 0 auto;
+  }
+  main .tool__container {
+    width: 27%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  main .sponsors__container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8rem 0;
+  }
+  main .sponsors_logo {
+    width: 12%;
+    height: 50px;
+  }
+
+  footer {
+    height: 200px;
+    align-items: center;
+    padding: 2rem 15rem;
+    justify-content: space-between;
+  }
+  footer .sitemap__list {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+  }
+  footer .socialmedia__container {
+    width: 15%;
+  }
+}
+
+

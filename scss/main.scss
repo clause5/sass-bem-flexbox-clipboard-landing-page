@@ -38,15 +38,21 @@ body{
 }
 
 footer{
+    width: 100%;
     background-color: $gray-footer;
     display: flex;
 }
-.sitemap__list{
-    list-style: none;
+.footer__logo{ width: 50px }
+
+.sitemap__list{ list-style: none 
 }
 .sitemap__item{
     line-height: 2.5rem;
     color: $dark-grayish-blue;
+}
+.socialmedia__container{
+    display: flex;
+    justify-content: space-between;
 }
 
 .sitemap__item , .socialmedia__icon{
@@ -66,12 +72,10 @@ footer{
         background-image: url('../../images/bg-header-mobile.png');
         background-position: center;
         background-size: cover;
-        & .header__title{
-            font-size: 2rem;
-        }
-        & .header__logo{
-            margin: 4rem auto 2rem auto;
-        }
+        & .header__title{ font-size: 2rem }
+
+        & .header__logo{ margin: 4rem auto 2rem auto }
+
         & .header__paragraph{
             display: block;
             margin: 2rem 0;
@@ -79,9 +83,8 @@ footer{
     }
     main{
         padding: 4rem 2rem;
-        & .main__section{
-            padding: 3rem 0;
-        }
+        & .main__section{ padding: 3rem 0 }
+
         & .section__paragraph, .tool_description{
             display: block;
             padding: 2rem .5rem;
@@ -97,9 +100,8 @@ footer{
             flex-direction: column;
             justify-content: space-evenly;
         }
-        & .tool__icon{
-            margin-bottom: 2rem;
-        }
+        & .tool__icon{ margin-bottom: 2rem }
+
         & .tools__container{
             height: 700px;
             margin: 2rem 0;
@@ -114,22 +116,106 @@ footer{
             justify-content: space-evenly;
             align-items: center;
         }
-        & .sponsors_logo{
-            width: 40%;
-        }
+        & .sponsors_logo{ width: 40% }
     }
     footer{
         height: 450px;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        & .footer__logo{
-            width: 50px;
+        
+        & .socialmedia__container{ width: 40% }
+    }
+}
+
+@media screen and (min-width: 801px){
+    .btn{
+        width: 180px;
+        margin: 0 1rem;
+    }
+    header{
+        width: 100%;
+        height: 750px;
+        background-image: url('../../images/bg-header-desktop.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 10rem 0 6rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        & .header__logo{
+            width: 100px;
+            margin: 0 auto;
         }
-        & .socialmedia__container{
-            width: 40%;
-            display: flex;
-            justify-content: space-between;
+        & .header__paragraph{
+            width: 45%;
+            margin: 0 auto;
         }
     }
+    main{
+        h2{ font-size: 2.5rem }
+        margin: 4rem auto;
+        .section__paragraph{
+            display: block;
+            width: 45%;
+            margin: 2rem auto;
+        }
+        .section__columns{
+            display: flex;
+            margin: 6rem 0 10rem 0;
+        }
+        .column__two{
+            width: 38%;
+            text-align: left;
+            padding-left: 8rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .column_paragraph{ margin-top: 1rem }
+
+        .main__section{ margin-bottom: 5rem }
+
+        .tools__container{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 4rem 0;
+        }
+        .tool__icon{
+            width: 60px; 
+            margin: 0 auto;
+        }
+        .tool__container{
+            width: 27%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+        .sponsors__container{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 8rem 0;
+        }
+        .sponsors_logo{
+            width: 12%;
+            height: 50px;
+        }
+    }
+
+    footer{
+        height: 200px;
+        align-items: center;
+        padding: 2rem 15rem;
+        justify-content: space-between;
+        .sitemap__list{
+            display: grid;
+            grid-template-columns: 150px 150px 150px;
+        }
+        .socialmedia__container{ width: 15% }
+    }
+
 }
